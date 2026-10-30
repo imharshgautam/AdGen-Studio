@@ -100,7 +100,7 @@ export default function Pricing() {
     };
 
     return (
-        <section id="pricing" className="py-20 bg-gradient-to-b from-[#0a0a1f] to-[#1a1a2e]">
+        <section id="pricing" className="py-20 bg-linear-to-b from-[#0a0a1f] to-[#1a1a2e]">
             <div className="max-w-6xl mx-auto px-4">
                 {/* Header */}
                 <div className="text-center mb-16">
@@ -117,7 +117,7 @@ export default function Pricing() {
                         <div
                             key={plan.id}
                             className={`relative rounded-2xl p-8 backdrop-blur-sm transition-all duration-300 hover:scale-105 ${plan.popular
-                                ? 'bg-gradient-to-br from-indigo-600/20 via-purple-600/20 to-pink-600/20 border-2 border-indigo-500/50 shadow-xl shadow-indigo-500/20'
+                                ? 'bg-linear-to-br from-indigo-600/20 via-purple-600/20 to-pink-600/20 border-2 border-indigo-500/50 shadow-xl shadow-indigo-500/20'
                                 : 'bg-white/5 border border-white/10 hover:border-white/20'
                                 }`}
                         >
@@ -140,13 +140,13 @@ export default function Pricing() {
                             </div>
 
                             {/* Divider */}
-                            <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-6"></div>
+                            <div className="h-px bg-linear-to-r from-transparent via-white/20 to-transparent mb-6"></div>
 
                             {/* Features */}
                             <ul className="space-y-4 mb-8">
                                 {plan.features.map((feature, index) => (
                                     <li key={index} className="flex items-start gap-3">
-                                        <CheckIcon className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                                        <CheckIcon className="w-5 h-5 text-indigo-400 shrink-0 mt-0.5" />
                                         <span className="text-gray-300 text-sm leading-relaxed">{feature}</span>
                                     </li>
                                 ))}
